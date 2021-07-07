@@ -1,5 +1,9 @@
-let calc = require("./calc.js");
-let mas = require("./class");
-console.log(mas.takeMas([1, 3, 2, 5, 3]));
-console.log(calc);
-console.log(process);
+let fs = require('fs');
+let writeStream = fs.createWriteStream('./big.txt');
+for (let i = 0; i < 1e6; i++) {
+   writeStream.write('hello gays')
+}
+let readStream = fs.createReadStream('./big.txt');
+readStream.on('data', function (res) {
+   console.log(res.toString());
+})
