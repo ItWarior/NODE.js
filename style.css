@@ -1,0 +1,94 @@
+html, body{
+   width: 100%;
+   height: 100%;
+}
+body{
+   background-color: black;
+   position: relative;
+}
+/* Перший спосіб позиціонування елементу
+позиціонування блоку */
+.box{
+   background-color: red;
+   width: 20%;
+   height: 20%;
+   position: absolute;
+   left: 0;
+   right: 0;
+   margin: 0 auto;
+   top: 50%;
+   transform: translate(0,-50%);
+}
+/* Другий спосіб позиціонування елементу */
+/* .box{
+   background-color: black;
+   color: white;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   height: 100%;
+} */
+/* третій спосіб позиціонування */
+/* .box{
+   display: grid;
+   justify-items: center;
+   align-items: center;
+   height: 100%;
+} */
+/* Стилі кнопок */
+.buttonsBlock{
+   background-color: black;
+   color: white;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+button{
+   display: block;
+   width: 100px;
+   height: 30px;
+   margin: 10px;
+}
+.active{
+   background-color: green;
+}
+.active:hover{
+   background-color: rgb(226, 241, 14);
+}
+.active:active{
+   background-color: rgb(245, 1, 172);
+}
+.disabled:hover {
+   border: 1px solid #0099cc;
+   background-color: #00aacc;
+   color: #ffffff;
+   padding: 5px 10px;
+ }
+ 
+ .disabled:hover,
+ .disabled[disabled]{
+   border: 1px solid #999999;
+   background-color: #cccccc;
+   color: #666666;
+ }
+
+.danger{
+   background-color: red;
+}
+#appForm{
+   background-color: black;
+   color: white;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   height: 100%;
+}
+input{
+   margin: 15px;
+   height: 30px;
+   width: 200px;
+   border-radius: 10px;
+}
